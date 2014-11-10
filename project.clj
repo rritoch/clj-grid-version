@@ -2,10 +2,10 @@
   :description "Grid Version Module"
   :url "http://www.vnetpublishing.com"
   :plugins [[grid "0.1.0-SNAPSHOT"]]
-  :repositories [["releases" {:url "http://home.vnetpublishing.com/artifactory/libs-release-local"
-                              :creds :gpg}]
-                 ["snapshots" {:url "http://home.vnetpublishing.com/artifactory/libs-snapshot-local"
-                               :creds :gpg}]]
+  ;;:repositories [["releases" {:url "http://home.vnetpublishing.com/artifactory/libs-release-local"
+  ;;                            :creds :gpg}]
+  ;;               ["snapshots" {:url "http://home.vnetpublishing.com/artifactory/libs-snapshot-local"
+  ;;                             :creds :gpg}]]
   :main grid.core
   :grid {:modules [applications.version]
          :osgi {:import-package [org.osgi.framework
