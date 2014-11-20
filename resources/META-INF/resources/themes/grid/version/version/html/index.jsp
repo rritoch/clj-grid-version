@@ -7,6 +7,7 @@
 <html>
 <head>
 <title>Grid Platform - Version</title>
+<link rel="stylesheet" href="themes/grid/version/version.css" />
 </head>
 <body>
 <h2>Grid Platform - Version</h2>
