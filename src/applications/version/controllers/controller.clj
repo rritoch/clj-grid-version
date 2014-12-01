@@ -9,14 +9,14 @@
 
 (defn method-display
   []
-    (let [m (controller/get-module (:ns (meta #'method-display)))
+    (let [m (controller/get-module (this-ns))
           v (ns-call m 'get-view "grid")]
          (view/display v)
          (view/render v)))
   
 (defn dispatch
    ([lock]
-   (if (controller/dispatch? *ns* lock)
+   (if (controller/dispatch? (this-ns) lock)
        (do (method-display)
            true)))
    ([] (dispatch true)))
