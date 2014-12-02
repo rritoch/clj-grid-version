@@ -14,7 +14,7 @@
 (defn get-view
   [name]
   (let [v (module/get-view (this-ns) name)]
-       (view/add-template-path v (str (:path (tglobal-get :current-theme)) *ds* "grid" *ds* name))
+       (view/add-template-path v (str (:path (tglobal-get :current-theme)) *ds* "version" *ds* name))
        v))
 
 (defn --construct

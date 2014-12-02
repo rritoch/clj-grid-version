@@ -11,5 +11,5 @@
   []
     (let [t-ns (this-ns)
           module (view/get-module t-ns)
-          vwp-model (module/get-model module "grid")]
+          vwp-model (module/get-model module "version")]
          (assign t-ns ["version" (ns-call vwp-model 'get-version)])))

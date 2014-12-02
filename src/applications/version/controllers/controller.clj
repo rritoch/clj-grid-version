@@ -10,7 +10,7 @@
 (defn method-display
   []
     (let [m (controller/get-module (this-ns))
-          v (ns-call m 'get-view "grid")]
+          v (ns-call m 'get-view "version")]
          (view/display v)
          (view/render v)))
   
